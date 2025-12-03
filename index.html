@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="King Rox - Shop Website. Purchase items & get a chance to win your dream car or cash prize!"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King Rox - Shop & Win Your Dream Car</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/keychain.css" />
+    <link rel="stylesheet" href="css/offers.css" />
+    <link rel="stylesheet" href="css/categories.css" />
+    <link rel="stylesheet" href="css/saleSection.css" />
+    <link rel="stylesheet" href="css/topSelling.css" />
+    <link rel="stylesheet" href="css/shopInterface.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top-bar">
+        <div class="container">
+          <div class="top-bar-left">
+            <a href="#">Account</a>
+            <a href="#">Track Order</a>
+            <a href="#">Support</a>
+          </div>
+          <div class="top-bar-right">Need help? Call us: 0123456789</div>
+        </div>
+      </div>
+
+      <header>
+        <div class="header-content container">
+          <div class="logo">
+            <svg
+              class="logo-crown"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+            >
+              <defs>
+                <linearGradient
+                  id="crownGold"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#b8860b" />
+                  <stop offset="20%" stop-color="#f9d423" />
+                  <stop offset="50%" stop-color="#ffd700" />
+                  <stop offset="80%" stop-color="#f9d423" />
+                  <stop offset="100%" stop-color="#b8860b" />
+                </linearGradient>
+                <radialGradient id="crownShine" cx="50%" cy="30%" r="60%">
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+                  <stop offset="50%" stop-color="#ffd700" stop-opacity="0.6" />
+                  <stop offset="100%" stop-color="#b8860b" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+              <path
+                fill="url(#crownGold)"
+                stroke="#b8860b"
+                stroke-width="1.5"
+                d="M32 8l-8 12 4-8 8-8 8 8 4 8-8-12zM12 24l8 12-4-8-8-8-8 8-4 8 8-12zM52 24l-8 12 4-8 8-8 8 8 4 8-8-12zM20 40l4 8h16l4-8-12-16-12 16z"
+              />
+              <path
+                fill="url(#crownShine)"
+                d="M32 10c-2 0-4 1.5-5.5 4l-1.5 3c-.5 1-1 2-1 3 0 2 1.5 3.5 3.5 3.5s3.5-1.5 3.5-3.5c0-1-.5-2-1-3l-1.5-3c-1.5-2.5-3.5-4-5.5-4zm0 0"
+                opacity="0.7"
+              />
+              <circle cx="32" cy="16" r="2.5" fill="#fff" opacity="0.9" />
+              <circle cx="20" cy="32" r="2" fill="#fff" opacity="0.8" />
+              <circle cx="44" cy="32" r="2" fill="#fff" opacity="0.8" />
+            </svg>
+            <span class="logo-king">KING</span>
+            <span class="logo-rox">ROX</span>
+          </div>
+
+          <div class="header-right">
+            <div class="search-icon" title="Search">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <line
+                  x1="16.6569"
+                  y1="16.4853"
+                  x2="21"
+                  y2="21"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+
+            <div class="account-box" title="Account">
+              <div class="account-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="8"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M4 20C4 16 8 14 12 14C16 14 20 16 20 20"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="account-info">
+                <span class="account-label">Account</span>
+                <span class="account-balance">0 Item 00.0$</span>
+              </div>
+            </div>
+
+            <div class="cart-box">
+              <div class="cart-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 6H21L19 14H7L6 6Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="9" cy="20" r="1" fill="currentColor" />
+                  <circle cx="17" cy="20" r="1" fill="currentColor" />
+                </svg>
+              </div>
+              <span class="cart-label">Cart</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="nav-bar">
+        <div class="nav-content container">
+          <div class="nav-left">
+            <div class="menu-shop-wrapper mobile-only">
+              <button class="menu-btn" id="mobileMenuBtn">
+                <span class="menu-label">Menu</span>
+              </button>
+              <span class="shop-dept">Shop Department</span>
+            </div>
+
+            <div class="nav-links desktop-only">
+              <a href="#" class="active">Home</a>
+              <a href="#">Free Entries to Win</a>
+              <a href="#">How it Works</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="nav-right">
+            <span class="flag">Ship for UAE</span>
+            <svg
+              width="30"
+              height="20"
+              viewBox="0 0 36 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="36" height="24" fill="#00732F" />
+              <rect y="8" width="36" height="8" fill="#FFFFFF" />
+              <rect y="16" width="36" height="8" fill="#000000" />
+              <rect width="8" height="24" fill="#D80027" />
+            </svg>
+
+            <button class="region-btn">
+              Change Region
+              <svg
+                class="down-arrow"
+                width="12"
+                height="7"
+                viewBox="0 0 12 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L6 6L11 1"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+          <div class="logo">
+            <span class="logo-king">KING</span><span class="logo-rox">ROX</span>
+          </div>
+          <button class="close-btn" id="closeMenuBtn">×</button>
+        </div>
+        <div class="mobile-nav-links">
+          <a href="#" class="active">Home</a>
+          <a href="#">Free Entries to Win</a>
+          <a href="#">How it Works</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-subtitle">Shop & Win</div>
+            <h1 class="hero-title">KING ROX DRAW</h1>
+            <p class="hero-description">
+              Purchase an item & get a chance to win your dream car/cash prize
+            </p>
+          </div>
+
+          <div class="hero-image">
+            <img src="/imgs/car1.png" alt="Car 1" class="car-image active" />
+            <img src="/imgs/car2.png" alt="Car 2" class="car-image" />
+            <img src="/imgs/car3.png" alt="Car 3" class="car-image" />
+          </div>
+
+          <div class="trust-badges">
+            <div class="trust-badge platinum">
+              <span>Platinum<br />Award 2021</span>
+            </div>
+
+            <div class="trust-badge feefo">
+              <img src="./imgs/feefo.svg" alt="Feefo Logo" class="badge-img" />
+            </div>
+
+            <div class="trust-badge reviews-io">
+              <img
+                src="./imgs/reviews.svg"
+                alt="Reviews.io Logo"
+                class="badge-img"
+              />
+            </div>
+
+            <div class="trust-badge-group">
+              <div class="trust-badge trustpilot">
+                <img
+                  src="./imgs/trustpilot.svg"
+                  alt="Trustpilot Logo"
+                  class="badge-img"
+                />
+              </div>
+
+              <div class="trust-stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="keychain-section">
+        <div class="keychain-container">
+          <div class="section-header">
+            <h2 class="section-title">King Rox keychain</h2>
+            <a href="#" class="view-all-link">View All</a>
+          </div>
+          <div class="products-grid"></div>
+        </div>
+      </section>
+
+      <section class="offers-section">
+        <div class="offer-card blue-offer">
+          <div class="text-area">
+            <p class="badge">New Offer</p>
+            <h3>Shop & Win</h3>
+            <h1>Win Your<br />Dream Car</h1>
+            <button class="shop-btn">Shop Now</button>
+          </div>
+          <img src="imgs/car3.png" class="car-img" alt="Car" />
+        </div>
+
+        <div class="offer-card yellow-offer">
+          <div class="text-area">
+            <p class="badge">Mega Offer</p>
+            <h3>Shop & Win</h3>
+            <h1>King Rox<br />Draw</h1>
+            <button class="shop-btn blue">Shop Now</button>
+          </div>
+          <img src="imgs/car2.png" class="car-img" alt="Car" />
+        </div>
+      </section>
+
+      <section class="categories-section">
+        <div class="section-header">
+          <h2>King Rox Categories</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="categories-grid"></div>
+      </section>
+
+      <section class="flash-sale-section">
+        <div class="flash-sale-container">
+          <div class="sale-header">
+            <h2 class="sale-title">Flash Sale</h2>
+
+            <div class="countdown">
+              <div class="time-unit">
+                <div class="time-value">0</div>
+                <div class="time-label">Days</div>
+              </div>
+              <div class="time-unit">
+                <div class="time-value">0</div>
+                <div class="time-label">Hours</div>
+              </div>
+              <div class="time-unit">
+                <div class="time-value">0</div>
+                <div class="time-label">Minutes</div>
+              </div>
+              <div class="time-unit">
+                <div class="time-value">0</div>
+                <div class="time-label">Seconds</div>
+              </div>
+            </div>
+
+            <a href="#" class="view-all-link">View All</a>
+          </div>
+          <div class="products-grid"></div>
+        </div>
+      </section>
+
+      <section class="top-selling-section">
+        <div class="top-selling-container">
+          <div class="top-selling-header">
+            <h2 class="top-selling-title">Top Selling Products</h2>
+            <a href="#" class="top-selling-view-all">View All</a>
+          </div>
+          <div class="top-selling-grid"></div>
+        </div>
+      </section>
+
+      <section class="offers-section">
+        <div class="offer-card yellow-offer">
+          <img src="imgs/car2.png" class="car-img" alt="Car" />
+
+          <div class="text-area">
+            <p class="badge">Mega Offer</p>
+            <h3>Shop & Win</h3>
+            <h1>King Rox<br />Draw</h1>
+            <button class="shop-btn blue">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="offer-card blue-offer">
+          <div class="text-area">
+            <p class="badge">New Offer</p>
+            <h3>Shop & Win</h3>
+            <h1>Win Your<br />Dream Car</h1>
+            <button class="shop-btn">Shop Now</button>
+            <img src="imgs/car3.png" class="car-img" alt="Car" />
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="header">
+          <h1>Top Selling Products</h1>
+          <button class="view-all-btn">View All</button>
+        </div>
+        <div class="products-grid-1"></div>
+      </div>
+
+      <div class="benefits-section">
+        <div class="benefit-item">
+          <div class="benefit-icon">🛒</div>
+          <div class="benefit-content">
+            <h4>Free Shipping</h4>
+            <p>When ordering over $100</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">↺</div>
+          <div class="benefit-content">
+            <h4>Free Return</h4>
+            <p>Get Return within 30 days</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🔒</div>
+          <div class="benefit-content">
+            <h4>Secure Payment</h4>
+            <p>100% Secure Online Payment</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">🏆</div>
+          <div class="benefit-content">
+            <h4>Best Quality</h4>
+            <p>Original Product Guaranteed</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-wrapper">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <div class="logo">
+                <svg
+                  class="logo-crown"
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                >
+                  <defs>
+                    <linearGradient
+                      id="crownGold"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" stop-color="#b8860b" />
+                      <stop offset="20%" stop-color="#f9d423" />
+                      <stop offset="50%" stop-color="#ffd700" />
+                      <stop offset="80%" stop-color="#f9d423" />
+                      <stop offset="100%" stop-color="#b8860b" />
+                    </linearGradient>
+                    <radialGradient id="crownShine" cx="50%" cy="30%" r="60%">
+                      <stop
+                        offset="0%"
+                        stop-color="#ffffff"
+                        stop-opacity="0.8"
+                      />
+                      <stop
+                        offset="50%"
+                        stop-color="#ffd700"
+                        stop-opacity="0.6"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#b8860b"
+                        stop-opacity="0"
+                      />
+                    </radialGradient>
+                  </defs>
+                  <path
+                    fill="url(#crownGold)"
+                    stroke="#b8860b"
+                    stroke-width="1.5"
+                    d="M32 8l-8 12 4-8 8-8 8 8 4 8-8-12zM12 24l8 12-4-8-8-8-8 8-4 8 8-12zM52 24l-8 12 4-8 8-8 8 8 4 8-8-12zM20 40l4 8h16l4-8-12-16-12 16z"
+                  />
+                  <path
+                    fill="url(#crownShine)"
+                    d="M32 10c-2 0-4 1.5-5.5 4l-1.5 3c-.5 1-1 2-1 3 0 2 1.5 3.5 3.5 3.5s3.5-1.5 3.5-3.5c0-1-.5-2-1-3l-1.5-3c-1.5-2.5-3.5-4-5.5-4zm0 0"
+                    opacity="0.7"
+                  />
+                  <circle cx="32" cy="16" r="2.5" fill="#fff" opacity="0.9" />
+                  <circle cx="20" cy="32" r="2" fill="#fff" opacity="0.8" />
+                  <circle cx="44" cy="32" r="2" fill="#fff" opacity="0.8" />
+                </svg>
+                <span class="logo-king">KING</span>
+                <span class="logo-rox">ROX</span>
+              </div>
+              <p>
+                Founded in 2025, King Rox has quickly become a leading global
+                platform
+              </p>
+            </div>
+
+            <div class="footer-section">
+              <h3>Quick Link</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Free Entries to Win</a></li>
+                <li><a href="#">How it work</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h3>Contact Information</h3>
+              <div class="contact-item">
+                <span>📍</span>
+                <div>
+                  <strong>Union Trade Center</strong><br />
+                  United States
+                </div>
+              </div>
+              <div class="contact-item">
+                <span>📞</span>
+                <div>+001 476 814</div>
+              </div>
+              <div class="contact-item">
+                <span>✉️</span>
+                <div>support@kingrox.com</div>
+              </div>
+            </div>
+
+            <div class="footer-section">
+              <h3>Download App</h3>
+              <p
+                style="
+                  font-size: 13px;
+                  color: rgba(255, 255, 255, 0.8);
+                  margin-bottom: 16px;
+                "
+              >
+                Save $3 With App & New User Only
+              </p>
+              <div class="app-buttons">
+                <a href="#" class="app-button">🎮 GET IN ON Google Play</a>
+                <a href="#" class="app-button">🍎 Download on the App Store</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-middle">
+            <div class="payment-methods">
+              <span
+                style="
+                  color: rgba(255, 255, 255, 0.8);
+                  font-weight: 600;
+                  margin-right: 8px;
+                "
+                >Payment Methods:</span
+              >
+              <div style="display: flex; gap: 12px; align-items: center">
+                <span
+                  style="
+                    background: white;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    font-weight: 700;
+                    color: #0052cc;
+                    font-size: 11px;
+                  "
+                  >PayPal</span
+                >
+                <span
+                  style="
+                    background: white;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    font-weight: 700;
+                    color: #ff5f00;
+                    font-size: 11px;
+                  "
+                  >MC</span
+                >
+                <span
+                  style="
+                    background: white;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    font-weight: 700;
+                    color: #1434cb;
+                    font-size: 11px;
+                  "
+                  >VISA</span
+                >
+                <span
+                  style="
+                    background: white;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    font-weight: 700;
+                    color: #006fcf;
+                    font-size: 11px;
+                  "
+                  >AMEX</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">King Rox © 2025. All Rights Reserved.</div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/categories.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

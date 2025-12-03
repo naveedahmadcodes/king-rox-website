@@ -1,0 +1,301 @@
+.benefits-section {
+  background-color: #e4ac1f;
+  border-radius: 12px;
+  padding: clamp(16px, 2.4vw, 32px);
+  margin: clamp(36px, 4.5vw, 60px) auto clamp(-40px, -3vw, -40px);
+  width: 90%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(18px, 2.6vw, 40px);
+  position: relative;
+  z-index: 10;
+  align-items: center;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1.6vw, 16px);
+}
+
+.benefit-icon {
+  font-size: clamp(20px, 2.6vw, 32px);
+  width: clamp(40px, 4.8vw, 48px);
+  height: clamp(40px, 4.8vw, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.benefit-content h4 {
+  font-size: clamp(14px, 1.6vw, 16px);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.benefit-content p {
+  font-size: clamp(12px, 1.2vw, 13px);
+  color: #333;
+  line-height: 1.45;
+  margin: 0;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: clamp(40px, 6vw, 80px) 0 clamp(18px, 3.6vw, 20px);
+  position: relative;
+  overflow: visible;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(12px, 3vw, 20px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: clamp(18px, 3vw, 60px);
+  margin-bottom: clamp(20px, 3vw, 40px);
+  align-items: start;
+}
+
+.footer-brand h2 {
+  font-size: clamp(20px, 3.6vw, 32px);
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-brand p {
+  font-size: clamp(12px, 1.6vw, 14px);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-section h3 {
+  font-size: clamp(14px, 1.8vw, 16px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  font-size: clamp(12px, 1.4vw, 14px);
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-section ul li a:hover {
+  color: #e4ac1f;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: clamp(12px, 1.4vw, 14px);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-item span {
+  font-size: clamp(16px, 2.2vw, 18px);
+  margin-top: 2px;
+  display: inline-block;
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app-button {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: clamp(8px, 1.6vw, 10px) clamp(10px, 2vw, 16px);
+  background-color: transparent;
+  color: white;
+  font-size: clamp(12px, 1.4vw, 13px);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.app-button:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-color: white;
+}
+
+.footer-middle {
+  display: flex;
+  gap: clamp(10px, 2.2vw, 20px);
+  margin-bottom: clamp(16px, 3vw, 30px);
+  padding-bottom: clamp(8px, 1.5vw, 30px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.payment-methods {
+  display: flex;
+  gap: clamp(8px, 2vw, 16px);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom {
+  text-align: right;
+  font-size: clamp(12px, 1.3vw, 14px);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1200px) {
+  .benefits-section {
+    max-width: 1100px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: clamp(14px, 2.2vw, 28px);
+    margin-bottom: clamp(-36px, -2.6vw, -36px);
+  }
+
+  .footer-content {
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: clamp(16px, 2.4vw, 40px);
+  }
+}
+
+@media (max-width: 992px) {
+  .benefits-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(14px, 2.2vw, 28px);
+    margin-bottom: -24px;
+    width: 95%;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(12px, 2vw, 30px);
+  }
+
+  .footer-middle {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-section {
+    margin-bottom: 0;
+    padding: clamp(12px, 3vw, 20px);
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .benefit-item {
+    gap: 10px;
+  }
+
+  .benefit-content h4 {
+    font-size: 15px;
+  }
+
+  .benefit-content p {
+    font-size: 13px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .contact-item {
+    align-items: center;
+  }
+
+  .app-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .app-button {
+    flex: 1 1 auto;
+    min-width: 140px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-section {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    margin: 20px auto 12px;
+    border-radius: 10px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .footer-brand h2 {
+    font-size: 20px;
+    justify-content: center;
+  }
+
+  .footer-brand p {
+    text-align: left;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .payment-methods {
+    justify-content: flex-start;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+}
+
+@media (hover: hover) {
+  .app-button:hover {
+    transform: translateY(-2px);
+  }
+}

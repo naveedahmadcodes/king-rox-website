@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  line-height: 1.6;
+}
+
+.main-container {
+  max-width: 2220px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+:root {
+  --primary-blue: #0d8fff;
+  --primary-gold: #f9b233;
+  --gold-dark: #e09b1f;
+  --primary-blue-one: #007bff;
+  --primary-gold-one: #e4ac1f;
+  --white: #ffffff;
+  --text-dark: #2c3e50;
+  --bg-topbar: #007bff4a;
+  --badge-blue: #0176dc;
+  --grad-gold-1: #c4861b;
+  --grad-gold-2: #ffcd22;
+  --grad-gold-3: #ffe55c;
+  --grad-gold-4: #e89923;
+  --text-gray: #666;
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.15);
+  --car-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  --pad-vertical: clamp(8px, 1.2vw, 16px);
+  --pad-horizontal: clamp(16px, 2.5vw, 40px);
+  --card-gap: clamp(12px, 1.6vw, 20px);
+  --card-radius: 12px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .main-container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .main-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+}

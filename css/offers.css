@@ -1,0 +1,149 @@
+.offers-section {
+  display: flex;
+  gap: 30px;
+  padding: 40px 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.offer-card {
+  width: 550px;
+  height: 350px;
+  padding: 8px 40px;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.25s ease;
+  min-height: 260px;
+}
+
+.offer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.blue-offer {
+  background: #007bff80;
+}
+
+.yellow-offer {
+  background: #e4ac1f;
+}
+
+.text-area {
+  z-index: 2;
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.blue-offer .badge {
+  color: white;
+}
+
+.blue-offer h3 {
+  color: black;
+}
+
+.blue-offer h1 {
+  color: white;
+}
+
+.yellow-offer .badge {
+  color: white;
+}
+
+.yellow-offer h3 {
+  color: white;
+}
+
+.yellow-offer h1 {
+  color: black;
+}
+
+.badge {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.offer-card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.offer-card h1 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 5px 0 10px 0;
+}
+
+.car-img {
+  width: 48%;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+}
+
+.offer-card:hover .car-img {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.shop-btn {
+  margin-top: 10px;
+  background: #e4ac1f;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 28px;
+  cursor: pointer;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.shop-btn.blue {
+  background: #007bff;
+}
+
+.shop-btn:hover {
+  transform: scale(1.06);
+}
+
+@media (max-width: 768px) {
+  .offer-card {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .text-area {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .car-img {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .car-img {
+    width: 80%;
+  }
+
+  .offer-card h1 {
+    font-size: 28px;
+  }
+}

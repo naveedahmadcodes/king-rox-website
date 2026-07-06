@@ -35,4 +35,4 @@ KingRox is a modern and fully responsive business website designed with a strong
 
 **Naveed Ahmad**
 
-⭐ If you found this project helpful, consider starring the repository!
+ If you found this project helpful, consider starring the repository!
